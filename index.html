@@ -3,17 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PingNet | خرید کانفیگ حجمی V2RayNG، V2Box، Streisand، Happ و V2RayTun</title>
-<meta name="description" content="PingNet کانفیگ حجمی مخصوص هر اپ می‌سازد: خرید کانفیگ V2RayNG، V2Box، Streisand، Happ و V2RayTun با حجم دقیق، بدون ضریب و پایداری بالا. تحویل فوری از تلگرام.">
-<meta name="keywords" content="خرید v2rayng, خرید v2box, خرید streisand, خرید happ, خرید v2raytun, کانفیگ حجمی v2rayng, کانفیگ حجمی v2box, خرید کانفیگ streisand, خرید کانفیگ happ, خرید کانفیگ v2raytun, PingNet">
+<title>pingsnet | خرید کانفیگ حجمی V2RayNG، V2Box، Streisand، Happ و V2RayTun</title>
+<meta name="description" content="pingsnet کانفیگ حجمی مخصوص هر اپ می‌سازد: خرید کانفیگ V2RayNG، V2Box، Streisand، Happ و V2RayTun با حجم دقیق، بدون ضریب و پایداری بالا. برای خرید، آیدی vpngram_admin را در تلگرام جستجو کنید.">
+<meta name="keywords" content="خرید v2rayng, خرید v2box, خرید streisand, خرید happ, خرید v2raytun, کانفیگ حجمی v2rayng, کانفیگ حجمی v2box, خرید کانفیگ streisand, خرید کانفیگ happ, خرید کانفیگ v2raytun, pingsnet">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <link rel="canonical" href="https://pingsnet2.github.io/">
-<meta property="og:title" content="PingNet | کانفیگ حجمی اختصاصی برای هر اپ">
-<meta property="og:description" content="خرید کانفیگ V2RayNG، V2Box، Streisand، Happ و V2RayTun با حجم دقیق و پایداری بالا. تحویل فوری از تلگرام.">
+<meta property="og:title" content="pingsnet | کانفیگ حجمی اختصاصی برای هر اپ">
+<meta property="og:description" content="خرید کانفیگ V2RayNG، V2Box، Streisand، Happ و V2RayTun با حجم دقیق و پایداری بالا. برای خرید، آیدی vpngram_admin را در تلگرام جستجو کنید.">
 <meta property="og:url" content="https://pingsnet2.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="fa_IR">
-<meta property="og:site_name" content="PingNet">
+<meta property="og:site_name" content="pingsnet">
+<meta name="google-site-verification" content="7duRDIOJuNP1XtZh-jG56MhvEKwCNi2SsZq4rYnYSV0" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet">
@@ -36,7 +37,6 @@
   --amber-soft:#fffbeb;
   --rose:#e11d48;
   --grad:linear-gradient(135deg,#1d4ed8,#2563eb 50%,#0d9488);
-  --grad-soft:linear-gradient(135deg,#eff4ff,#e6fffa);
   --shadow:0 18px 50px rgba(20,24,36,.08);
   --shadow-sm:0 6px 18px rgba(20,24,36,.06);
   --r:18px;
@@ -52,10 +52,64 @@ body{
 }
 .container{max-width:1180px}
 
+/* ===== TOP BUY BAR ===== */
+.buy-bar{
+  background:linear-gradient(135deg,#0f172a,#1e293b 55%,#0d9488);
+  color:#fff;
+  padding:.85rem 0;
+  position:relative;
+  overflow:hidden;
+  z-index:1100;
+}
+.buy-bar::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 15% 50%,rgba(37,99,235,.5),transparent 45%),
+    radial-gradient(circle at 85% 50%,rgba(13,148,136,.45),transparent 45%);
+  pointer-events:none;
+}
+.buy-bar .bb-inner{
+  position:relative;z-index:1;
+  display:flex;align-items:center;justify-content:center;
+  gap:1rem;flex-wrap:wrap;text-align:center;
+}
+.buy-bar .bb-icon{
+  width:34px;height:34px;border-radius:10px;
+  background:rgba(255,255,255,.14);
+  display:inline-flex;align-items:center;justify-content:center;
+  font-size:1.1rem;flex-shrink:0;
+}
+.buy-bar .bb-text{
+  font-size:.94rem;font-weight:600;line-height:1.55;
+}
+.buy-bar .bb-text strong{color:#99f6e4;font-weight:800}
+.buy-bar .bb-text .id-tag{
+  display:inline-block;
+  background:rgba(255,255,255,.16);
+  border:1px solid rgba(255,255,255,.25);
+  padding:.12rem .55rem;border-radius:6px;
+  font-family:monospace;font-weight:700;letter-spacing:.3px;
+  color:#fff;direction:ltr;
+}
+.buy-bar .bb-btn{
+  display:inline-flex;align-items:center;gap:.45rem;
+  background:#fff;color:#0f172a;
+  padding:.5rem 1.1rem;border-radius:10px;
+  font-weight:800;font-size:.85rem;
+  text-decoration:none;transition:.22s;
+  box-shadow:0 6px 18px rgba(0,0,0,.2);
+  white-space:nowrap;
+}
+.buy-bar .bb-btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.3);color:#0f172a}
+@media(max-width:768px){
+  .buy-bar .bb-text{font-size:.85rem}
+  .buy-bar .bb-inner{gap:.7rem}
+}
+
 /* NAV */
 .pn-nav{
   position:sticky;top:0;z-index:1000;
-  background:rgba(246,247,251,.9);
+  background:rgba(246,247,251,.92);
   backdrop-filter:blur(16px);
   -webkit-backdrop-filter:blur(16px);
   border-bottom:1px solid var(--line);
@@ -63,6 +117,7 @@ body{
 .pn-brand{
   display:inline-flex;align-items:center;gap:.55rem;
   font-weight:800;font-size:1.25rem;color:var(--ink);text-decoration:none;
+  direction:ltr;
 }
 .pn-brand .mark{
   width:34px;height:34px;border-radius:10px;
@@ -71,6 +126,8 @@ body{
   font-size:1.05rem;box-shadow:0 6px 16px rgba(37,99,235,.3);
 }
 .pn-brand .mark span{color:#99f6e4}
+.pn-brand .btext{font-family:Vazir,system-ui,sans-serif;letter-spacing:.2px}
+.pn-brand .btext .hl{color:var(--brand)}
 .pn-nav .nav-link{
   color:var(--ink-soft)!important;font-weight:500;font-size:.9rem;
   padding:.45rem .75rem!important;border-radius:8px;transition:.2s;
@@ -87,13 +144,11 @@ body{
 .btn-primary:hover{color:#fff;transform:translateY(-2px);box-shadow:0 14px 30px rgba(37,99,235,.4)}
 .btn-outline{background:var(--surface);color:var(--ink);border:1px solid var(--line-2)}
 .btn-outline:hover{border-color:var(--brand);color:var(--brand);background:var(--brand-soft)}
-.btn-teal{background:var(--teal);color:#fff;box-shadow:0 10px 24px rgba(13,148,136,.25)}
-.btn-teal:hover{color:#fff;transform:translateY(-2px)}
 .btn-sm{padding:.55rem 1rem;font-size:.85rem}
 .btn-block{width:100%}
 
 /* HERO */
-.pn-hero{padding:4.5rem 0 4rem}
+.pn-hero{padding:4rem 0 4rem}
 .pn-eyebrow{
   display:inline-flex;align-items:center;gap:.5rem;
   background:var(--surface);border:1px solid var(--line);
@@ -186,7 +241,7 @@ body{
 .accent-t{color:var(--teal)}
 .accent-a{color:var(--amber)}
 
-/* APP CARDS (core SEO blocks) */
+/* APP CARDS */
 .apps-grid{
   display:grid;grid-template-columns:repeat(6,1fr);gap:1rem;
 }
@@ -209,9 +264,7 @@ body{
 .app-card h3{font-weight:800;font-size:1.05rem;margin:0;line-height:1.4}
 .app-card .ac-os{font-size:.78rem;color:var(--muted);font-weight:500}
 .app-card p{color:var(--ink-soft);font-size:.89rem;margin:0 0 1rem;line-height:1.85}
-.app-card .ac-meta{
-  display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1rem;
-}
+.app-card .ac-meta{display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1rem}
 .app-card .ac-meta span{
   font-size:.74rem;font-weight:600;
   background:#f3f4f8;color:var(--ink-soft);
@@ -251,6 +304,22 @@ body{
 .plan ul li{padding:.22rem 0;color:var(--ink-soft);display:flex;align-items:center;gap:.4rem}
 .plan ul li i{color:var(--teal);font-size:.9rem}
 
+/* HOW */
+.step{
+  background:var(--surface);border:1px solid var(--line);
+  border-radius:16px;padding:1.5rem;height:100%;text-align:center;
+}
+.step .num{
+  width:48px;height:48px;border-radius:14px;
+  display:inline-flex;align-items:center;justify-content:center;
+  font-size:1.2rem;font-weight:800;margin-bottom:.8rem;
+  background:var(--brand-soft);color:var(--brand);
+}
+.step .num.t{background:var(--teal-soft);color:var(--teal)}
+.step .num.a{background:var(--amber-soft);color:var(--amber)}
+.step h3{font-weight:800;font-size:1rem;margin-bottom:.4rem}
+.step p{font-size:.88rem;color:var(--ink-soft);margin:0;line-height:1.85}
+
 /* FAQ */
 .faq{max-width:900px;margin:0 auto}
 .faq-item{
@@ -268,7 +337,7 @@ body{
 .faq-q[aria-expanded="true"] .chev{transform:rotate(180deg);color:var(--brand)}
 .faq-a{padding:0 1.2rem 1.1rem;font-size:.9rem;color:var(--ink-soft);line-height:1.9}
 
-/* SEO PROSE */
+/* PROSE */
 .prose-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 @media(max-width:768px){.prose-grid{grid-template-columns:1fr}}
 .prose-box{
@@ -294,7 +363,7 @@ body{
   background:var(--grad);color:#fff;
 }
 .pn-cta h2{font-weight:800;font-size:clamp(1.4rem,3vw,1.9rem);margin-bottom:.5rem}
-.pn-cta p{color:rgba(255,255,255,.82);margin-bottom:1.5rem;font-size:.96rem}
+.pn-cta p{color:rgba(255,255,255,.85);margin-bottom:1.5rem;font-size:.96rem}
 .pn-cta .btn-white{background:#fff;color:var(--brand);box-shadow:0 10px 24px rgba(0,0,0,.15)}
 .pn-cta .btn-white:hover{transform:translateY(-2px);color:var(--brand)}
 .pn-cta .btn-ghost-w{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.35)}
@@ -302,8 +371,15 @@ body{
 
 /* FOOTER */
 .pn-footer{background:#10131c;color:#9aa3b5;padding:2.8rem 0 1.4rem}
-.pn-footer .brand{font-weight:800;font-size:1.4rem;color:#fff;display:inline-flex;align-items:center;gap:.5rem;margin-bottom:.6rem}
-.pn-footer .brand .mark{width:30px;height:30px;border-radius:9px;background:var(--grad);display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:.95rem}
+.pn-footer .brand{
+  font-weight:800;font-size:1.4rem;color:#fff;
+  display:inline-flex;align-items:center;gap:.5rem;margin-bottom:.6rem;
+}
+.pn-footer .brand .mark{
+  width:30px;height:30px;border-radius:9px;background:var(--grad);
+  display:inline-flex;align-items:center;justify-content:center;
+  color:#fff;font-size:.95rem;
+}
 .pn-footer .brand .mark span{color:#99f6e4}
 .pn-footer p{font-size:.87rem;max-width:620px;margin:0 auto}
 .pn-footer .social a{
@@ -327,12 +403,27 @@ body{
 </head>
 <body>
 
+<!-- ===== TOP BUY BAR (PROMINENT) ===== -->
+<div class="buy-bar" role="region" aria-label="راهنمای خرید">
+  <div class="container bb-inner">
+    <span class="bb-icon"><i class="bi bi-cart-check-fill"></i></span>
+    <span class="bb-text">
+      قصد خرید دارید؟ یا روی دکمه بزنید، یا آیدی
+      <span class="id-tag">@vpngram_admin</span>
+      را در تلگرام جستجو کنید.
+    </span>
+    <a href="https://t.me/vpngram_admin" target="_blank" rel="noopener" class="bb-btn">
+      <i class="bi bi-telegram"></i> خرید مستقیم
+    </a>
+  </div>
+</div>
+
 <!-- ===== NAV ===== -->
 <nav class="pn-nav">
   <div class="container d-flex align-items-center justify-content-between py-2">
     <a class="pn-brand" href="#">
       <span class="mark"><i class="bi bi-broadcast-pin"></i><span>.</span></span>
-      Ping<span style="color:var(--brand)">Net</span>
+      <span class="btext" dir="ltr">pings<span class="hl">net</span></span>
     </a>
     <div class="d-none d-lg-flex align-items-center gap-1">
       <a href="#apps" class="nav-link">اپلیکیشن‌ها</a>
@@ -365,24 +456,28 @@ body{
           و هر اپی که استفاده می‌کنی
         </h1>
         <p class="lead">
-          PingNet برای هر اپلیکیشن، کانفیگ حجمی بهینه‌شده تحویل می‌دهد.
+          pingsnet برای هر اپلیکیشن، کانفیگ حجمی بهینه‌شده تحویل می‌دهد.
           حجمی که می‌خری دقیقاً همان حجمی است که مصرف می‌کنی — بدون ضریب پنهان،
           بدون افت سرعت و بدون تنظیمات پیچیده.
         </p>
         <div class="cta">
           <a href="https://t.me/vpngram_admin" target="_blank" rel="noopener" class="btn btn-primary">
-            <i class="bi bi-cart-check"></i> سفارش از کارشناس فروش
+            <i class="bi bi-telegram"></i> خرید از تلگرام <span style="font-family:monospace;direction:ltr">@vpngram_admin</span>
           </a>
           <a href="#apps" class="btn btn-outline">
             <i class="bi bi-grid-3x3-gap"></i> اپ‌های پشتیبانی‌شده
           </a>
         </div>
+        <p class="mt-2" style="font-size:.85rem;color:var(--muted)">
+          <i class="bi bi-info-circle"></i>
+          اگر ترجیح می‌دهی دستی جستجو کنی، آیدی <span style="font-family:monospace;direction:ltr;font-weight:700;color:var(--brand)">vpngram_admin</span> را در تلگرام سرچ کن.
+        </p>
       </div>
       <div class="col-lg-6 rv">
-        <div class="hero-panel" role="img" aria-label="نمونه پنل PingNet با اپ‌های متصل">
+        <div class="hero-panel" role="img" aria-label="نمونه پنل pingsnet با اپ‌های متصل">
           <div class="hp-top">
             <span class="t-dot"></span>
-            <strong>پنل PingNet</strong>
+            <strong>پنل pingsnet</strong>
             <span class="badge">فعال</span>
           </div>
           <div class="hp-body">
@@ -441,17 +536,16 @@ body{
   </div>
 </div>
 
-<!-- ===== APPS (SEO CORE) ===== -->
+<!-- ===== APPS ===== -->
 <section class="pn-section" id="apps">
   <div class="container">
     <div class="sec-head text-center rv">
       <h2>کانفیگ اختصاصی برای هر اپ — <span class="accent-b">دقیقاً همان که لازم داری</span></h2>
-      <p>روی هر اپلیکیشنی که اسمش را می‌بری، کلیک کن تا ببینی چرا کانفیگ PingNet فرق دارد.</p>
+      <p>روی هر اپلیکیشنی که اسمش را می‌بری، کلیک کن تا ببینی چرا کانفیگ pingsnet فرق دارد.</p>
     </div>
 
     <div class="apps-grid rv">
 
-      <!-- V2RayNG -->
       <article class="app-card" id="v2rayng">
         <div class="ac-top">
           <div class="ac-ico"><i class="bi bi-android2"></i></div>
@@ -459,7 +553,7 @@ body{
         </div>
         <p>
           V2RayNG استاندارد اندروید است — اما کانفیگ‌های عمومی روی این کلاینت
-          در ساعات شلوغ به‌سرعت افت می‌کنند. کانفیگ حجمی PingNet مخصوص V2RayNG
+          در ساعات شلوغ به‌سرعت افت می‌کنند. کانفیگ حجمی pingsnet مخصوص V2RayNG
           تنظیم شده تا پینگ پایین برای بازی و پایداری برای استریم را با هم داشته باشی.
         </p>
         <div class="ac-meta">
@@ -470,7 +564,6 @@ body{
         </a>
       </article>
 
-      <!-- V2Box -->
       <article class="app-card" id="v2box">
         <div class="ac-top">
           <div class="ac-ico teal"><i class="bi bi-apple"></i></div>
@@ -478,7 +571,7 @@ body{
         </div>
         <p>
           V2Box روی آیفون و آیپد رابط ساده‌ای دارد، ولی کیفیت اتصال کاملاً به
-          کانفیگ وابسته است. کانفیگ حجمی PingNet برای V2Box بهینه شده تا
+          کانفیگ وابسته است. کانفیگ حجمی pingsnet برای V2Box بهینه شده تا
           اتصال پایدار در شبکه‌های محدودشده و مصرف دقیق حجم را تجربه کنی.
         </p>
         <div class="ac-meta">
@@ -489,7 +582,6 @@ body{
         </a>
       </article>
 
-      <!-- Streisand -->
       <article class="app-card" id="streisand">
         <div class="ac-top">
           <div class="ac-ico amber"><i class="bi bi-shield-lock"></i></div>
@@ -497,7 +589,7 @@ body{
         </div>
         <p>
           Streisand روی دسکتاپ قدرت واقعی‌اش را نشان می‌دهد — اگر کانفیگ درست
-          باشد. کانفیگ حجمی PingNet برای Streisand روی ویندوز و مک، اتصال
+          باشد. کانفیگ حجمی pingsnet برای Streisand روی ویندوز و مک، اتصال
           یکنواخت برای کار و استریم بدون قطعی فراهم می‌کند.
         </p>
         <div class="ac-meta">
@@ -508,7 +600,6 @@ body{
         </a>
       </article>
 
-      <!-- Happ -->
       <article class="app-card wide" id="happ">
         <div class="ac-top">
           <div class="ac-ico" style="background:#fce7f3;color:#be185d"><i class="bi bi-lightning-charge-fill"></i></div>
@@ -517,7 +608,7 @@ body{
         <p>
           Happ یکی از سبک‌ترین کلاینت‌های چندسکویی است و برای کسانی که دنبال
           یک تجربه‌ی تمیز و بدون شلوغی هستند انتخاب خوبی است. کانفیگ حجمی
-          PingNet برای Happ طوری تنظیم شده که بدون تنظیمات پیچیده، اتصال
+          pingsnet برای Happ طوری تنظیم شده که بدون تنظیمات پیچیده، اتصال
           پایدار و مصرف شفاف داشته باشی. فقط لینک را وارد می‌کنی و وصل می‌شوی.
         </p>
         <div class="ac-meta">
@@ -528,7 +619,6 @@ body{
         </a>
       </article>
 
-      <!-- V2RayTun -->
       <article class="app-card wide" id="v2raytun">
         <div class="ac-top">
           <div class="ac-ico" style="background:#f3e8ff;color:#7e22ce"><i class="bi bi-tv"></i></div>
@@ -536,7 +626,7 @@ body{
         </div>
         <p>
           V2RayTun برای کاربرانی است که سبکی و کنترل را با هم می‌خواهند.
-          کانفیگ حجمی PingNet مخصوص V2RayTun، اتصال پایدار در شرایط
+          کانفیگ حجمی pingsnet مخصوص V2RayTun، اتصال پایدار در شرایط
           اختلال و محاسبه‌ی دقیق حجم را ترکیب می‌کند — بدون اینکه لازم باشد
           خودت دستی چیزی را تنظیم کنی.
         </p>
@@ -597,7 +687,7 @@ body{
         <a href="https://t.me/vpngram_admin" target="_blank" rel="noopener" class="btn btn-outline btn-block btn-sm">سفارش</a>
       </div>
       <div class="plan best">
-        <span class="best-tag">پیشنهاد PingNet</span>
+        <span class="best-tag">پیشنهاد pingsnet</span>
         <div class="vol">۴۰ <small>گیگ</small></div>
         <div class="dur">اعتبار ۳۰ روزه</div>
         <div class="price">۸۰۰,۰۰۰ <small>تومان</small></div>
@@ -612,12 +702,12 @@ body{
     </div>
     <p class="text-center mt-2 rv" style="font-size:.86rem;color:var(--muted)">
       <i class="bi bi-info-circle"></i>
-      به حجم بالاتر یا پلن سفارشی نیاز داری؟ از تلگرام با کارشناس در تماس باش.
+      به حجم بالاتر یا پلن سفارشی نیاز داری؟ آیدی <span style="font-family:monospace;direction:ltr;font-weight:700;color:var(--brand)">vpngram_admin</span> را در تلگرام جستجو کن.
     </p>
   </div>
 </section>
 
-<!-- ===== HOW IT WORKS ===== -->
+<!-- ===== HOW ===== -->
 <section class="pn-section" id="how">
   <div class="container">
     <div class="sec-head text-center rv">
@@ -626,31 +716,31 @@ body{
     </div>
     <div class="row g-3 rv">
       <div class="col-md-4">
-        <div class="prose-box" style="height:100%;text-align:center">
-          <div style="width:48px;height:48px;border-radius:14px;background:var(--brand-soft);color:var(--brand);display:inline-flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:800;margin-bottom:.8rem">۱</div>
-          <h3 style="border:none;padding:0;justify-content:center">اپ و پلن را انتخاب کن</h3>
-          <p style="margin-top:.4rem">بگو با کدام اپ وصل می‌شوی و چه حجمی می‌خواهی. کارشناس بهترین گزینه را پیشنهاد می‌دهد.</p>
+        <div class="step">
+          <div class="num">۱</div>
+          <h3>اپ و پلن را انتخاب کن</h3>
+          <p>بگو با کدام اپ وصل می‌شوی و چه حجمی می‌خواهی. کارشناس بهترین گزینه را پیشنهاد می‌دهد.</p>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="prose-box" style="height:100%;text-align:center">
-          <div style="width:48px;height:48px;border-radius:14px;background:var(--teal-soft);color:var(--teal);display:inline-flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:800;margin-bottom:.8rem">۲</div>
-          <h3 style="border:none;padding:0;justify-content:center">کانفیگ را تحویل بگیر</h3>
-          <p style="margin-top:.4rem">لینک یا فایل پیکربندی مخصوص اپ تو، مستقیماً در تلگرام برایت ارسال می‌شود.</p>
+        <div class="step">
+          <div class="num t">۲</div>
+          <h3>کانفیگ را تحویل بگیر</h3>
+          <p>لینک یا فایل پیکربندی مخصوص اپ تو، مستقیماً در تلگرام برایت ارسال می‌شود.</p>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="prose-box" style="height:100%;text-align:center">
-          <div style="width:48px;height:48px;border-radius:14px;background:var(--amber-soft);color:var(--amber);display:inline-flex;align-items:center;justify-content:center;font-size:1.2rem;font-weight:800;margin-bottom:.8rem">۳</div>
-          <h3 style="border:none;padding:0;justify-content:center">وارد کن و وصل شو</h3>
-          <p style="margin-top:.4rem">لینک را در اپ وارد می‌کنی و اتصال برقرار می‌شود. اگر جایی گیر کردی، راهنمایی می‌گیری.</p>
+        <div class="step">
+          <div class="num a">۳</div>
+          <h3>وارد کن و وصل شو</h3>
+          <p>لینک را در اپ وارد می‌کنی و اتصال برقرار می‌شود. اگر جایی گیر کردی، راهنمایی می‌گیری.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===== SEO PROSE ===== -->
+<!-- ===== PROSE ===== -->
 <section class="pn-section" id="guide" style="background:var(--bg-alt)">
   <div class="container">
     <div class="sec-head text-center rv">
@@ -663,7 +753,7 @@ body{
         <p>
           کلاینت‌های مختلف (V2RayNG، V2Box، Streisand، Happ، V2RayTun) هر کدام
           تنظیمات شبکه و مسیریابی مخصوص خودشان را دارند. یک کانفیگ عمومی که
-          برای همه یکسان باشد، در هیچ‌کدام بهینه نیست. <strong>PingNet</strong>
+          برای همه یکسان باشد، در هیچ‌کدام بهینه نیست. <strong>pingsnet</strong>
           کانفیگ را بر اساس اپی که استفاده می‌کنی تنظیم می‌کند تا بهترین
           عملکرد را از همان کلاینت بگیری.
         </p>
@@ -689,10 +779,10 @@ body{
         </p>
       </div>
       <div class="prose-box">
-        <h3>تفاوت PingNet با کانفیگ‌های ارزان چیست؟</h3>
+        <h3>تفاوت pingsnet با کانفیگ‌های ارزان چیست؟</h3>
         <p>
           کانفیگ ارزان معمولاً یعنی سرور اشتراکی، ضریب مصرف پنهان و قطعی در
-          ساعات اوج. PingNet روی <strong>زیرساخت اختصاصی</strong> اجرا
+          ساعات اوج. pingsnet روی <strong>زیرساخت اختصاصی</strong> اجرا
           می‌شود، حجم را شفاف محاسبه می‌کند و کانفیگ را مخصوص اپ تو تنظیم
           می‌کند. تفاوت را نه در تبلیغات، بلکه در استفاده‌ی روزمره حس می‌کنی.
         </p>
@@ -701,7 +791,7 @@ body{
     <div class="tags rv" aria-label="کلیدواژه‌ها">
       <span>خرید v2rayng</span><span>خرید v2box</span><span>خرید streisand</span>
       <span>خرید happ</span><span>خرید v2raytun</span><span>کانفیگ حجمی</span>
-      <span>PingNet</span><span>کانفیگ اختصاصی</span>
+      <span>pingsnet</span><span>کانفیگ اختصاصی</span>
     </div>
   </div>
 </section>
@@ -716,7 +806,7 @@ body{
     <div class="faq rv">
       <div class="faq-item">
         <button class="faq-q" aria-expanded="true" data-t="q1">
-          <span>کانفیگ PingNet روی کدام اپ‌ها کار می‌کند؟</span>
+          <span>کانفیگ pingsnet روی کدام اپ‌ها کار می‌کند؟</span>
           <i class="bi bi-chevron-down chev"></i>
         </button>
         <div class="faq-a" id="q1">
@@ -738,7 +828,7 @@ body{
           <i class="bi bi-chevron-down chev"></i>
         </button>
         <div class="faq-a" id="q3" style="display:none">
-          کانفیگ‌های PingNet روی زیرساخت اختصاصی اجرا می‌شوند و برای حفظ اتصال در شرایط اختلال تنظیم شده‌اند. پایداری، تفاوت اصلی ما با کانفیگ‌های عمومی است.
+          کانفیگ‌های pingsnet روی زیرساخت اختصاصی اجرا می‌شوند و برای حفظ اتصال در شرایط اختلال تنظیم شده‌اند. پایداری، تفاوت اصلی ما با کانفیگ‌های عمومی است.
         </div>
       </div>
       <div class="faq-item">
@@ -747,7 +837,7 @@ body{
           <i class="bi bi-chevron-down chev"></i>
         </button>
         <div class="faq-a" id="q4" style="display:none">
-          در تلگرام به کارشناس فروش (<span dir="ltr">@vpngram_admin</span>) پیام بده. اپ و پلن را انتخاب می‌کنی، کانفیگ آماده تحویل می‌گیری. اطلاعیه‌ها هم در کانال <span dir="ltr">@pingsnet</span> منتشر می‌شود.
+          در تلگرام آیدی <span dir="ltr" style="font-family:monospace;font-weight:700">@vpngram_admin</span> را جستجو کن و به کارشناس فروش پیام بده. اپ و پلن را انتخاب می‌کنی، کانفیگ آماده تحویل می‌گیری. اطلاعیه‌ها هم در کانال <span dir="ltr" style="font-family:monospace;font-weight:700">@pingsnet</span> منتشر می‌شود.
         </div>
       </div>
       <div class="faq-item">
@@ -756,7 +846,7 @@ body{
           <i class="bi bi-chevron-down chev"></i>
         </button>
         <div class="faq-a" id="q5" style="display:none">
-          بله. PingNet کانفیگ را بر اساس کلاینتی که استفاده می‌کنی تنظیم می‌کند؛ نه یک کانفیگ عمومی برای همه. همین موضوع باعث می‌شود عملکرد بهتری روی V2RayNG، V2Box، Streisand، Happ یا V2RayTun بگیری.
+          بله. pingsnet کانفیگ را بر اساس کلاینتی که استفاده می‌کنی تنظیم می‌کند؛ نه یک کانفیگ عمومی برای همه. همین موضوع باعث می‌شود عملکرد بهتری روی V2RayNG، V2Box، Streisand، Happ یا V2RayTun بگیری.
         </div>
       </div>
     </div>
@@ -767,13 +857,13 @@ body{
 <section class="pn-cta">
   <div class="container rv">
     <h2>اپت را انتخاب کن، کانفیگش را بگیر</h2>
-    <p>همین حالا به کارشناس فروش پیام بده — کمتر از چند دقیقه کانفیگ آماده است.</p>
+    <p>کافی است آیدی <span style="font-family:monospace;direction:ltr;background:rgba(255,255,255,.18);padding:.15rem .55rem;border-radius:6px;font-weight:700">vpngram_admin</span> را در تلگرام جستجو کنی — کانفیگ آماده است.</p>
     <div class="d-flex flex-wrap gap-2 justify-center">
       <a href="https://t.me/vpngram_admin" target="_blank" rel="noopener" class="btn btn-white">
-        <i class="bi bi-cart-check"></i> سفارش از کارشناس
+        <i class="bi bi-telegram"></i> خرید مستقیم از تلگرام
       </a>
       <a href="https://t.me/pingsnet" target="_blank" rel="noopener" class="btn btn-ghost-w">
-        <i class="bi bi-telegram"></i> کانال PingNet
+        <i class="bi bi-broadcast"></i> کانال pingsnet
       </a>
     </div>
   </div>
@@ -784,18 +874,21 @@ body{
   <div class="container text-center">
     <div class="brand">
       <span class="mark"><i class="bi bi-broadcast-pin"></i><span>.</span></span>
-      Ping<span style="color:var(--brand-2)">Net</span>
+      <span dir="ltr">pings<span style="color:var(--brand-2)">net</span></span>
     </div>
     <p>
       کانفیگ حجمی مخصوص V2RayNG، V2Box، Streisand، Happ و V2RayTun —
       با حجم دقیق، بدون ضریب و تحویل فوری از تلگرام.
+    </p>
+    <p style="font-size:.82rem;margin-top:.6rem;opacity:.75">
+      سفارش: <span dir="ltr" style="font-family:monospace;font-weight:700;color:#99f6e4">@vpngram_admin</span> · کانال: <span dir="ltr" style="font-family:monospace;font-weight:700;color:#99f6e4">@pingsnet</span>
     </p>
     <div class="social my-2">
       <a href="https://t.me/pingsnet" target="_blank" rel="noopener" aria-label="کانال تلگرام"><i class="bi bi-telegram"></i></a>
       <a href="https://t.me/vpngram_admin" target="_blank" rel="noopener" aria-label="کارشناس فروش"><i class="bi bi-chat-dots-fill"></i></a>
     </div>
     <hr>
-    <div class="copy">© ۱۴۰۳ PingNet — تمامی حقوق محفوظ است.</div>
+    <div class="copy">© ۱۴۰۳ pingsnet — تمامی حقوق محفوظ است.</div>
   </div>
 </footer>
 
@@ -820,7 +913,7 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
     {
       "@type":"Organization",
       "@id":"https://pingsnet2.github.io/#org",
-      "name":"PingNet",
+      "name":"pingsnet",
       "url":"https://pingsnet2.github.io/",
       "sameAs":["https://t.me/pingsnet"]
     },
@@ -828,13 +921,13 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
       "@type":"WebSite",
       "@id":"https://pingsnet2.github.io/#site",
       "url":"https://pingsnet2.github.io/",
-      "name":"PingNet",
+      "name":"pingsnet",
       "inLanguage":"fa-IR",
       "publisher":{"@id":"https://pingsnet2.github.io/#org"}
     },
     {
       "@type":"ItemList",
-      "name":"اپلیکیشن‌های پشتیبانی‌شده توسط PingNet",
+      "name":"اپلیکیشن‌های پشتیبانی‌شده توسط pingsnet",
       "itemListElement":[
         {"@type":"ListItem","position":1,"name":"خرید کانفیگ V2RayNG","url":"https://pingsnet2.github.io/#v2rayng"},
         {"@type":"ListItem","position":2,"name":"خرید کانفیگ V2Box","url":"https://pingsnet2.github.io/#v2box"},
@@ -845,9 +938,9 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
     },
     {
       "@type":"Product",
-      "name":"کانفیگ حجمی PingNet",
+      "name":"کانفیگ حجمی pingsnet",
       "description":"کانفیگ حجمی اختصاصی برای V2RayNG، V2Box، Streisand، Happ و V2RayTun با حجم دقیق و بدون ضریب.",
-      "brand":{"@type":"Brand","name":"PingNet"},
+      "brand":{"@type":"Brand","name":"pingsnet"},
       "offers":[
         {"@type":"Offer","name":"۱۰ گیگ ۳۰ روزه","price":"200000","priceCurrency":"IRT","availability":"https://schema.org/InStock","url":"https://t.me/vpngram_admin"},
         {"@type":"Offer","name":"۲۰ گیگ ۳۰ روزه","price":"400000","priceCurrency":"IRT","availability":"https://schema.org/InStock","url":"https://t.me/vpngram_admin"},
@@ -864,10 +957,10 @@ document.querySelectorAll('.rv').forEach(el=>io.observe(el));
   "@context":"https://schema.org",
   "@type":"FAQPage",
   "mainEntity":[
-    {"@type":"Question","name":"کانفیگ PingNet روی کدام اپ‌ها کار می‌کند؟","acceptedAnswer":{"@type":"Answer","text":"روی V2RayNG، V2Box، Streisand، Happ و V2RayTun. کانفیگ بر اساس اپ انتخابی کاربر تنظیم و تحویل داده می‌شود."}},
+    {"@type":"Question","name":"کانفیگ pingsnet روی کدام اپ‌ها کار می‌کند؟","acceptedAnswer":{"@type":"Answer","text":"روی V2RayNG، V2Box، Streisand، Happ و V2RayTun. کانفیگ بر اساس اپ انتخابی کاربر تنظیم و تحویل داده می‌شود."}},
     {"@type":"Question","name":"حجم مصرفی چطور محاسبه می‌شود؟","acceptedAnswer":{"@type":"Answer","text":"حجم دقیق و بدون ضریب محاسبه می‌شود و هر گیگ مصرفی معادل یک گیگ از پلن است."}},
-    {"@type":"Question","name":"در شرایط اختلال شبکه اتصال قطع می‌شود؟","acceptedAnswer":{"@type":"Answer","text":"کانفیگ‌های PingNet روی زیرساخت اختصاصی اجرا می‌شوند و برای حفظ اتصال در شرایط اختلال تنظیم شده‌اند."}},
-    {"@type":"Question","name":"چطور سفارش بدهم؟","acceptedAnswer":{"@type":"Answer","text":"از طریق تلگرام به کارشناس فروش @vpngram_admin پیام بدهید. اطلاعیه‌ها در کانال @pingsnet منتشر می‌شود."}},
+    {"@type":"Question","name":"در شرایط اختلال شبکه اتصال قطع می‌شود؟","acceptedAnswer":{"@type":"Answer","text":"کانفیگ‌های pingsnet روی زیرساخت اختصاصی اجرا می‌شوند و برای حفظ اتصال در شرایط اختلال تنظیم شده‌اند."}},
+    {"@type":"Question","name":"چطور سفارش بدهم؟","acceptedAnswer":{"@type":"Answer","text":"آیدی vpngram_admin را در تلگرام جستجو کنید و به کارشناس فروش پیام بدهید. اطلاعیه‌ها در کانال pingsnet منتشر می‌شود."}},
     {"@type":"Question","name":"آیا کانفیگ برای اپ من بهینه‌سازی شده است؟","acceptedAnswer":{"@type":"Answer","text":"بله. کانفیگ بر اساس کلاینت کاربر (V2RayNG، V2Box، Streisand، Happ یا V2RayTun) تنظیم می‌شود."}}
   ]
 }
